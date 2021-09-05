@@ -9,16 +9,16 @@ version of the Python program.
 If you have a Python script that you think others might find useful,
 please [contribute](CONTRIBUTING.md) to the Scriptorium!
 
-The concept here is that while we welcome submission of full-up
-Python [Packages](https://planetarypy.org/packages/), there are
-lots of valid bits of Python that are more atomic.  One-offs,
-singletons, or other little bits and bobs that maybe you've written
-are all valuable, and might help someone else.
+The concept here is that while the PlanetaryPy Project welcomes
+submission of full-up Python [Packages](https://planetarypy.org/packages/),
+there are lots of valid bits of Python that are more atomic.
+One-offs, singletons, or other little bits and bobs that maybe
+you've written are all valuable, and might help someone else.
 
 So do your colleagues a service today, and contribute that script!
 
 If you have more than a single Python file, but less than a whole
-package, you can contribute a directory of Python files (that
+package, you can also contribute a directory of Python files (that
 presumably all work together).
 
 

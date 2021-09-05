@@ -34,14 +34,14 @@ If you're not sure or have questions, ask!
 The scripts you see in this repo have a certain organization to them
 and level of documentation, but you don't need to include that, if you
 don't have it.  That's one of the things that contributors can add to
-your script if it lives in the repository.
+your script if it lives in the Scriptorium repository.
 
 
 ### Report Bugs or Ask for Features via Issues
 
 We want to hear from you!  You can report bugs, ask for new features,
 or just raise issues or concerns via logging an [Issue via our
-GitHub repo](https://github.com/planetarypy/scriptorium/issues>).
+GitHub repo](https://github.com/planetarypy/scriptorium/issues).
 
 
 ### Fix Bugs or Implement Features
@@ -60,7 +60,7 @@ part of the document files in the repo, in script docstrings, etc.
 ### Submit Feedback
 
 The best way to send feedback is to file an
-[Issue](https://github.com/planetarypy/scriptorium/issues>).
+[Issue](https://github.com/planetarypy/scriptorium/issues).
 
 
 ## Get Started!
