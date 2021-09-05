@@ -1,10 +1,17 @@
 # Scriptorium
 
 This PlanetaryPy repository is not a focused library, but a collection
-of scripts.  You may find something here useful, and if so, feel
-free to clone the whole repo, or just click on one and hit the "Raw"
-button and then "Download" or "Save As" the resulting plain text
-version of the Python program.
+of scripts useful for work related to Planetary Sciences.  
+
+## Use a script
+
+You may find something here useful, and if so, feel free to clone
+the whole repo, or just click on one and hit the "Raw" button and
+then "Download" or "Save As" the resulting plain text version of
+the Python program.
+
+
+## Providing a script
 
 If you have a Python script that you think others might find useful,
 please [contribute](CONTRIBUTING.md) to the Scriptorium!

@@ -1,7 +1,11 @@
 # Contributing
 
-Contributions are welcome, and they are greatly appreciated! Every
-little bit helps, and credit will always be given.
+We want it to be easy to get that useful script of yours into the Scriptorium
+where others can use it.
+
+Of course, there are lots of different ways to contribute, all of
+which are are greatly appreciated! Every little bit helps, and
+credit will always be given.
 
 You can contribute in many ways:
 
@@ -9,8 +13,7 @@ You can contribute in many ways:
 
 ### Contribute your script
 
-We want it to be easy to get that useful script of yours into the Scriptorium
-where others can use it.  Here's how:
+Here's how to contribute your script:
 
 - Submit a PR to this repo
 - Attach the code to an Issue on this repo
