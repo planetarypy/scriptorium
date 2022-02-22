@@ -10,7 +10,6 @@ from astropy import units as u
 from traitlets import Enum, Float, HasTraits, Unicode
 import planets
 
-from .exceptions import MissingParameterError, SpiceError, SPointNotSetError
 from .kernels import load_generic_kernels
 
 load_generic_kernels()
@@ -21,6 +20,33 @@ Radii = namedtuple("Radii", "a b c")
 Stores the 3 element radii tuple of SPICE in a named structure.
 """
 
+class SpicerError(Exception):
+    pass
+
+
+class SpiceError(SpicerError):
+    def __init__(self, function):
+        self.function = function
+
+    def __str__(self):
+        return "SPICE: Calulating {} failed.".format(self.function)
+
+
+class MissingParameterError(SpicerError):
+    def __init__(self, txt):
+        self.txt = txt
+
+    def __str__(self):
+        return "Parameter missing: {}".format(self.txt)
+
+
+class SPointNotSetError(SpicerError):
+    def __init(self, txt):
+        self.txt = txt
+
+    def __str__(self):
+        return "Surface point has not been set. {}".format(self.txt)
+    
 
 def make_axis_rotation_matrix(direction, angle):
     """
