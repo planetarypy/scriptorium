@@ -36,3 +36,7 @@ Planetary-relevant Python scripts.  General-purpose Python scripts
 aren't really appropriate, but if you're not sure: contribute it
 anyway, and we can have a discussion about whether something is
 appropriate or not.
+
+## Contact
+
+Email scriptorium-planetarypy AT googlegroups DOT com for questions and submissions.
