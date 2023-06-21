@@ -13,7 +13,7 @@ Criteria for Automated Identification of Stereo Image Pairs
 (https://www.hou.usra.edu/meetings/lpsc2015/pdf/2703.pdf)
 """
 
-# Copyright 2020-2021, Ross A. Beyer (rbeyer@seti.org)
+# Copyright 2020-2021, 2023, Ross A. Beyer (rbeyer@seti.org)
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -116,7 +116,10 @@ def main():
     im1 = ImgInfo(args.files[0])
     im2 = ImgInfo(args.files[1])
 
-    overlap = area_overlap(im1.geometry, im2.geometry)
+    try:
+        overlap = area_overlap(im1.geometry, im2.geometry)
+    except ValueError:
+        overlap = 0
 
     # Gather qualities:
     parallax_ang = parallax(
@@ -223,8 +226,8 @@ def area_overlap(geom1: ogr.Geometry, geom2: ogr.Geometry):
     if not geom1.Intersects(geom2):
         raise ValueError(f"Geometries do not overlap.")
 
-    intersection_geom = geom1.Intersection(geom2)
-    union_geom = geom1.Union(geom2)
+    intersection_geom = geom1.Buffer(0.01).Intersection(geom2.Buffer(0.01))
+    union_geom = geom1.Buffer(0.01).Union(geom2.Buffer(0.01))
 
     return intersection_geom.GetArea() / union_geom.GetArea()
 
